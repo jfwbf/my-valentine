@@ -106,8 +106,8 @@
     <div class="hearts-bg" id="hearts"></div>
 
     <div class="container" id="content">
-        <h1>Для самой лучшей ❤️</h1>
-        <h2>Ты будешь моей валентинкой?</h2>
+        <h1>Для самой прекрасной ❤️</h1>
+        <h2>Согласишься быть моей Валентинкой?</h2>
         <div class="buttons">
             <button class="yes" onclick="sayYes()">Да 💖</button>
             <button class="no" id="noBtn">Нет 💔</button>
@@ -149,23 +149,26 @@
     function sayYes() {
         document.getElementById("content").innerHTML = `
             <div style="animation: fadeIn 0.8s ease;">
-                <h1 style="font-size: clamp(30px, 10vw, 50px);">Ураааа!!! 💖💖💖</h1>
-                <p style="font-size: 22px; color: #ff3cac;">Теперь ты моя валентинка 😍</p>
+                <h1 style="font-size: clamp(30px, 10vw, 50px);">Как же я рад! 💖💖💖</h1>
+                <p style="font-size: 22px; color: #ff3cac;">Жанымм сол! Люблюю тебяя 😍</p>
                 <button class="next-step-btn" onclick="showDetails()">Тогда жаным еще нажми) ✨</button>
             </div>
         `;
     }
 
     function showDetails() {
-        document.getElementById("content").innerHTML = `
-            <div class="final-box">
-                <h1 style="color: #ff3cac; margin-top: 0; font-size: 32px;">Жду тебя! ✨</h1>
-                <p style="font-size: clamp(18px, 5vw, 24px);">14 февраля в <span style="font-weight: bold;">20:00</span></p>
-                <p style="font-size: clamp(16px, 4vw, 20px);">📍 Ресторан <b>«Дель Папа»</b></p>
-                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 0;">Проспект Республики 10, 1 этаж</p>
-            </div>
-        `;
-    }
+    document.getElementById("content").innerHTML = `
+        <div class="final-box">
+            <h1 style="color: #ff3cac; margin-top: 0; font-size: 32px;">Жду тебя! ✨</h1>
+            <p style="font-size: clamp(18px, 5vw, 24px);">14 февраля в <span style="font-weight: bold;">20:00</span></p>
+            <p style="font-size: clamp(16px, 4vw, 20px);">📍 Ресторан <b>«Del Papa»</b></p>
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 5px;">Адрес: Проспект Республики 10, 1 этаж</p>
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">Дресс-код: красивое платье и хорошее настроение</p>
+            <p style="font-size: 16px; color: #ff3cac; font-weight: bold;">Этот вечер - только для нас. 💖</p>
+        </div>
+    `;
+}
 </script>
 </body>
 </html>
+
